@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgforlayout"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="380dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/food" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="450dp"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        app:cardCornerRadius="25dp" >
+
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="450dp"
+            android:background="#F2ECEC">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Cities"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="45dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Option"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@id/spinner"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/category"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <Button
+                android:id="@+id/btnsignin"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/spinner2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="79dp"
+                android:layout_marginRight="20dp"
+                android:background="#FF5722"
+                android:text="Search Now"
+                android:textColor="#F5F0F0"
+                tools:ignore="TextContrastCheck" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="View All" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="15dp"
+        android:text="Top Hotels" />
+
+
+</RelativeLayout>
